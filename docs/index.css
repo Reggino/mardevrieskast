@@ -1,6 +1,10 @@
 .content_container bodycopy {
   height: 100vh;
 }
+.content_container bodycopy.content_padding {
+  padding-bottom: 1rem;
+}
 .page_content {
-  overflow-y: visible;
+  overflow-y: clip;
+  padding-bottom: 1rem;
 }
