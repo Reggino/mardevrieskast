@@ -1,6 +1,8 @@
 // Stop cargo.site auto resizing logic
-window.baseUnit.stopListening();
-window.baseUnit.removeEventListeners();
+window.addEventListener("load", () => {
+  window.baseUnit.stopListening();
+  window.baseUnit.removeEventListeners();
 
-// Remove any configure autosizing font size
-document.documentElement.removeAttribute("style");
+  // Remove any configure autosizing font size
+  document.documentElement.removeAttribute("style");
+});
