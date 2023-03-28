@@ -4,7 +4,7 @@
 .content_container bodycopy.content_padding {
   padding-bottom: 1rem;
 }
-.page_content {
+.content_container bodycopy.content_padding .page_content {
   overflow-y: clip;
   padding-bottom: 1rem;
 }
