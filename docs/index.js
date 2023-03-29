@@ -8,7 +8,7 @@ function scrollToHash() {
   }
   const boundingClientRect = pageDiv.getBoundingClientRect();
   scrollingContainer.scrollTo({
-    left: pageDiv.getBoundingClientRect().x + scrollingContainer.scrollLeft - window.outerWidth / 2 + boundingClientRect.width / 2,
+    left: boundingClientRect.x + scrollingContainer.scrollLeft - window.outerWidth / 2 + boundingClientRect.width / 2,
     behavior: "smooth",
   });
 }
