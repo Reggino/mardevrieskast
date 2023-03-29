@@ -7,13 +7,11 @@ function scrollToHash() {
     return;
   }
   scrollingContainer.scrollTo({
-    left: pageDiv.getBoundingClientRect().x + scrollingContainer.scrollLeft - 100,
+    left: pageDiv.getBoundingClientRect().x + scrollingContainer.scrollLeft - window.outerWidth / 2 + boundingClientRect.width / 2,
     behavior: "smooth",
   });
 }
 
-// window.BaseUnit.prototype.initialize = function () { console.log('initialize overloaded'); }
-// window.BaseUnit.prototype.addEventListeners = function () { console.log('addEventListeners overloaded'); }
 window.BaseUnit.prototype.refresh = function () { console.log('refresh overloaded'); }
 
 window.addEventListener("load", () => {
