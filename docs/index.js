@@ -14,6 +14,7 @@ function scrollToHash() {
 
 window.BaseUnit.prototype.initialize = function () { console.log('initialize overloaded'); }
 window.BaseUnit.prototype.addEventListeners = function () { console.log('addEventListeners overloaded'); }
+window.BaseUnit.prototype.refresh = function () { console.log('refresh overloaded'); }
 
 window.addEventListener("load", () => {
   // Stop cargo.site auto resizing logic
