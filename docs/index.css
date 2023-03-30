@@ -22,7 +22,7 @@
 .homepage .content_container bodycopy.content_padding .page_content a {
   margin-top: -30px;
 }
-  
-[grid-col=x12] {
+
+body > div.main_container > div.pinned.pinned_top > div > div.page.container.container_width.clearfix > bodycopy > div > div > [grid-col=x12] {
     width: auto;
 }
