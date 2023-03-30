@@ -9,6 +9,11 @@
   padding-bottom: 1rem;
 }
 
+.main_container .pinned_top bodycopy {
+    background: white;
+    height: 120px
+}
+
 .homepage .content_container bodycopy.content_padding {
   overflow: auto;
 }
