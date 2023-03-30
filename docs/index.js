@@ -28,5 +28,8 @@ window.addEventListener("load", () => {
   scrollToHash();
   
   // Set menu to default width
-  document.querySelector('body > div.main_container > div.pinned.pinned_top > div > div.page.container.container_width.clearfix > bodycopy > div > div:nth-child(3) > div').style.width = 'auto'
+  const menuStyle = document.querySelector('body > div.main_container > div.pinned.pinned_top > div > div.page.container.container_width.clearfix > bodycopy > div > div:nth-child(3) > div').style;
+  menuStyle.width = 'auto';
+  menuStyle.marginLeft = 'auto';
+  menuStyle.marginRight = 'auto';
 });
