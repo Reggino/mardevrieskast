@@ -18,6 +18,7 @@
   flex-direction: column;
   overflow-y: auto;
   padding-top: 30px;
+  align-items: center;
 }
 
 .homepage .content_container bodycopy.content_padding .page_content a {
