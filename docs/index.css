@@ -8,3 +8,21 @@
   overflow-y: clip;
   padding-bottom: 1rem;
 }
+
+.homepage .content_container bodycopy.content_padding {
+  overflow: auto;
+}
+
+.homepage .content_container bodycopy.content_padding .page_content {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.homepage .content_container bodycopy.content_padding .page_content a {
+  margin-top: -30px;
+}
+  
+[grid-col=x12] {
+    width: auto;
+}
