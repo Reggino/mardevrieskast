@@ -7,6 +7,7 @@
 .content_container bodycopy.content_padding .page_content {
   overflow-y: clip;
   padding-bottom: 1rem;
+  height: 100%;
 }
 
 .main_container .pinned_top bodycopy {
