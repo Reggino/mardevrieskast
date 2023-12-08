@@ -13,16 +13,7 @@ function scrollToHash() {
   });
 }
 
-window.BaseUnit.prototype.refresh = function () { console.log('refresh overloaded'); }
-
-window.addEventListener("load", () => {
-  // Stop cargo.site auto resizing logic
-  window.baseUnit.stopListening();
-  window.baseUnit.removeEventListeners();
-
-  // Remove any configure autosizing font size
-  document.documentElement.removeAttribute("style");
-
+window.BaseUnit.prototype.refresh = function () {
   // Layout videoList if it exists
   const videoList = document.querySelector('ol.videoList');
   if (videoList) {
@@ -45,6 +36,15 @@ window.addEventListener("load", () => {
     newHtml.push('<div grid-col="x7" grid-pad="10" class=""><img width="469" height="145" width_o="469" height_o="145" data-src="https://freight.cargo.site/t/original/i/ad93de1007b19e05a58b8dfa65775f71a22718a8de2aad943e3ad529b9fead06/to-the-left.png" data-mid="173269648" border="0" data-scale="24" src="//freight.cargo.site/w/469/i/ad93de1007b19e05a58b8dfa65775f71a22718a8de2aad943e3ad529b9fead06/to-the-left.png" style="width: 313.399px; height: 96.8931px;"></div></div>');
     videoList.outerHTML = newHtml.join('');
   }
+}
+
+window.addEventListener("load", () => {
+  // Stop cargo.site auto resizing logic
+  window.baseUnit.stopListening();
+  window.baseUnit.removeEventListeners();
+
+  // Remove any configure autosizing font size
+  document.documentElement.removeAttribute("style");
 
   // Install scroll handlers
   window.addEventListener("hashchange", scrollToHash);
@@ -56,3 +56,4 @@ window.addEventListener("load", () => {
   menuStyle.marginLeft = 'auto';
   menuStyle.marginRight = 'auto';
 });
+
