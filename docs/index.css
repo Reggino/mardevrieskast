@@ -30,3 +30,9 @@
 .homepage .content_container bodycopy.content_padding .page_content a {
   margin-top: -30px;
 }
+
+[grid-row] {
+  -webkit-flex-wrap: nowrap !important;
+  -ms-flex-wrap: nowrap !important;
+  flex-wrap: nowrap !important;
+}
